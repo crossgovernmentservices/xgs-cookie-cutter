@@ -1,0 +1,26 @@
+{% raw %}
+{% extends "govuk_template/views/layouts/govuk_template.html" %}
+
+{% block head %}
+<!-- gov uk elements stylesheet -->
+<link href="{{ asset_path }}stylesheets/main.css" media="screen" rel="
+stylesheet" type="text/css" />
+{% endblock %}
+
+{%block content %}
+  <main id="wrapper" role="main">
+    <div id="content">
+      <div class="inner-block">
+        <div class="phase-banner">
+          <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a prototype service</span>
+          </p>
+        </div>
+      </div>
+      {%block body_content %}
+      {% endblock %}
+    </div>
+  </main>
+{% endblock %}
+{% endraw %}
