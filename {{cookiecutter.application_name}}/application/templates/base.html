@@ -2,9 +2,15 @@
 {% extends "govuk_template/views/layouts/govuk_template.html" %}
 
 {% block head %}
-<!-- gov uk elements stylesheet -->
-<link href="{{ asset_path }}stylesheets/main.css" media="screen" rel="
-stylesheet" type="text/css" />
+  <!-- gov uk elements stylesheet -->
+  {% assets "css_govuk_elements" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+  {% endassets %}
+
+  <!-- this application main stylesheet -->
+  {% assets "css_main" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+  {% endassets %}
 {% endblock %}
 
 {%block content %}

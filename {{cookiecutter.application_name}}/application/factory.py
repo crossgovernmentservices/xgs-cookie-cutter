@@ -19,6 +19,7 @@ def create_app(config_filename):
     register_errorhandlers(app)
     register_blueprints(app)
     app.context_processor(asset_path_context_processor)
+    register_extensions(app)
     return app
 
 def register_errorhandlers(app):
@@ -34,5 +35,6 @@ def register_blueprints(app):
     from application.frontend.views import frontend
     app.register_blueprint(frontend)
 
-# def register_extensions(app):
-#     pass
+def register_extensions(app):
+    from application.assets import env
+    env.init_app(app)
