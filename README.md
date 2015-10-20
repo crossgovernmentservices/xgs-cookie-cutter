@@ -7,6 +7,7 @@ A template for a python3 flask application using [cookiecutter](https://github.c
 
 1. Python 3
 2. Virtualenv and VirtualenvWrapper
+3. [Sass](http://sass-lang.com/) - required for flask-assets
 
 
 ####How to use it
@@ -63,3 +64,9 @@ and have a look at http://localhost:8000
 
 #### License
 MIT
+
+
+#### TODO
+Do some more cleanup in post gen script, specifically with the all gov uk template etc.
+
+Add some makefile targets for re-downloading external asset stuff from govuk-assets-flask.
