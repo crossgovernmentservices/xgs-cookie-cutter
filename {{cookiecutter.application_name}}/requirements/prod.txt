@@ -3,4 +3,3 @@ Flask-WTF
 WTForms
 gunicorn
 Flask-Assets
-Flask-Script==2.0.5
