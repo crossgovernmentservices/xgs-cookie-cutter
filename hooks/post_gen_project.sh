@@ -12,5 +12,5 @@ sass --style expanded --line-numbers --load-path  application/static/govuk_front
 # this might be a bit to brutal but don't really need this hanging around
 # can maybe put this into a makefile for the project rather than a post get
 # task
-rm -rf application/static/govuk_frontend_toolkit
-rm -rf application/static/govuk_elements
+# rm -rf application/static/govuk_frontend_toolkit
+# rm -rf application/static/govuk_elements
