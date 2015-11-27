@@ -69,4 +69,10 @@ MIT
 #### TODO
 Do some more cleanup in post gen script, specifically with the all gov uk template etc.
 
+Need to correct path variable for govuk_elements to match flask expectations
+
+Need to move images from govuk_template and govuk_elements to suitable location for flask.
+
+Get post gen to delete all the crap that comes with some of the dependencies
+
 Add some makefile targets for re-downloading external asset stuff from govuk-assets-flask.
